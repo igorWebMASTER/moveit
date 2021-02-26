@@ -16,3 +16,10 @@
   gap: 6.25rem;
   align-content: center;
 }
+
+@media screen and (max-width: 768px) {
+  .container section {
+    margin-top: 4rem;
+    grid-template-columns: 1fr;
+  }
+}
