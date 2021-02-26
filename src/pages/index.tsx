@@ -6,6 +6,7 @@ import { Profile } from '../components/Profile';
 import { CompletedChallenges } from '../components/CompletedChallenges';
 import { ChallengeBox } from '../components/ChallengeBox';
 import { Countdown } from '../components/Countdown';
+import { MenuLeft } from '../components/MenuLeft';
 
 import styles from '../styles/pages/Home.module.css';
 import { CountdownProvider } from '../contexts/CountdownContext';
@@ -24,6 +25,7 @@ export default function Home(props: HomeProps) {
       currentExperience={props.currentExperience}
       challengesCompleted={props.challengesCompleted}
     >
+      <MenuLeft />
       <div className={styles.container}>
         <div>
           <Head>
