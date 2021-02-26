@@ -28,6 +28,7 @@
   color: var(--blue);
   background: url('/icons/levelUp.svg') no-repeat center;
   background-size: contain;
+  user-select: none;
 }
 
 .container strong {
