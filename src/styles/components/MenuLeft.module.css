@@ -2,7 +2,6 @@
   width: 100%;
   max-width: 10rem;
   height: 100vh;
-  background: #900;
   position: absolute;
   left: 0%;
   right: 0%;
@@ -16,6 +15,9 @@
   display: flex;
   flex-direction: column;
   z-index: 999;
+  transition: all 0.2s;
+  /* transform: translateX(-100%); */
+  transform: translateX(0%);
 }
 
 .imgLogo {
@@ -35,15 +37,45 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
 }
 
 .containerMenu .buttonNavigation button {
   border: 0;
-  background: transparent;
   display: flex;
   align-items: center;
+  background: transparent;
   justify-content: center;
   margin: 1rem 0;
   font-size: 0;
   outline: 0;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.containerMenu .buttonNavigation button a:active {
+  border-left: 8px solid rgb(0, 48, 150);
+  width: 100%;
+  background: #900;
+}
+
+.slideButtonMenu {
+  height: 60px;
+  width: 6px;
+  background: #5965e0;
+  border-radius: 0px 5px 5px 0px;
+  position: absolute;
+  left: 0;
+  transition: all 0.4s;
+  margin-top: -50px;
+}
+
+.slideButtonMenuNotActive {
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .containerMenu {
+    display: none;
+  }
 }
